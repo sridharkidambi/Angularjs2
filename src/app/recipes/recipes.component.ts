@@ -8,9 +8,9 @@ import { Recipe } from './recipe';
   selector: 'rb-recipes',
   templateUrl: 'recipes.component.html',
   directives : [ RecipeListComponent ,RecipeDetailComponent]
-})
+})  
 export class RecipesComponent  {
-  selectdRecipe:Recipe;
+   selectdRecipe:Recipe;
   /*constructor(){}
   ngOnInit(){
 

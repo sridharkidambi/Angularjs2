@@ -8,9 +8,13 @@ import { RecipeItemComponent } from './recipe-item.component';
   directives : [ RecipeItemComponent ]
 })
 export class RecipeListComponent implements OnInit {
-  recipes:Recipe[]=[];
+  recipes:Recipe[]=[
+ new Recipe('Nityasr','R','http://srisrinivasaperumaltemplecoimbatore.com/gallery/images/190.JPG',[]),
+ new Recipe('Sridhar','Kidambi','http://srisrinivasaperumaltemplecoimbatore.com/gallery/images/190.JPG',[])
+    
+  ];
   //recipe:Recipe;
-  recipe = new Recipe('Dummy','dummy','http://srisrinivasaperumaltemplecoimbatore.com/gallery/images/190.JPG');
+  //recipe = new Recipe('Dummy','dummy','http://srisrinivasaperumaltemplecoimbatore.com/gallery/images/190.JPG');
   
   @Output() recipeSelected = new EventEmitter<Recipe>();
 
